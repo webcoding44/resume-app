@@ -1,7 +1,7 @@
-import React, { useRef,useEffect } from 'react'
+import { useRef,useEffect } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 import Tilt from 'react-parallax-tilt';
-import profile from '../../assets/profile2.png';
+import profile from '../../assets/gemini-2.5-flash-image-preview__nano-banana__عکس_را_بدون_پس_زمینه-removebg-preview.png';
 // import poster from '../../assets/certificate_activity_img/myposter1.jpeg';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -98,7 +98,7 @@ const About = () => {
             </h1>
             {/* name   */}
             <h2 className='text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-4 leading-tight'>
-               Mohammad Zakariya
+               Safiurahman
             </h2>
             {/* skills heading with typo effect  */}
             <h3 className='text-lg sm:text-2xl md:text-2xl font-semibold mb-4 text-[#8245ec] leading-tight'>
@@ -107,11 +107,11 @@ const About = () => {
                 </span>
                       <TypeAnimation
                           sequence={[
-                              'Full Stack Developer', 
+                              'Front-End Developer', 
                               2000,                 
                               'React Developer',   
                               2000,                 
-                              'MERN Enthusiast',  
+                              'Next Developer',  
                               2000,                 
                               'Web Developer',  
                               2000,                 
@@ -124,14 +124,11 @@ const About = () => {
                   </h3>
                   {/* about me paragraph  */}
                   <p className='overflow-hidden text-2 gpu-boost text-sm sm:text-md md:text-md text-gray-400 mt-8 leading-relaxed'>
-            Full Stack Developer (MERN) focused on React.js and Tailwind CSS, with hands-on experience building responsive
-            user interfaces and backend features using Node.js, Express, and MongoDB. Prioritizing clean UX, modular
-            component architecture, REST APIs, and delivering production-ready, end-to-end web applications. Passionate
-            about problem-solving, learning, and leveraging AI tools to speed up development and build efficient solutions.
+         I’m a Front-End Developer, and I have expertise in HTML, CSS, JavaScript, TypeScript, Next.JS , React.JS, Redux, Tailwind CSS, and GSAP.JS. I build modern, responsive, and user-friendly web applications with clean code and smooth animations. My focus is on performance, detail, and quality, ensuring every project meets client expectations.
                   </p>
                   {/* resume button*/}
                   <a 
-                  href='https://drive.google.com/file/d/1VeUaylkmeGCIf7a2jwUN8Fj41rca-MCG/view?usp=drive_link'
+                  href='https://drive.google.com/drive/my-drive'
                   target='_blank'
                   rel='noopener noreferrer'
                   onClick={trackResumeDownload}

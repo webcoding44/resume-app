@@ -5,42 +5,26 @@ import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
 import gsapLogo from './assets/tech_logo/gsap.png';
-import nodejsLogo from './assets/tech_logo/nodejs.png';
-import expressjsLogo from './assets/tech_logo/express.png';
-import mongodbLogo from './assets/tech_logo/mongodb.png';
-import pythonLogo from './assets/tech_logo/python.png';
+import typelogo from './assets/tech_logo/type.png';
+import Antdes from './assets/tech_logo/ant.png';
+import Material from './assets/tech_logo/matrail.png';
 import gitLogo from './assets/tech_logo/git.png';
 import githubLogo from './assets/tech_logo/github.png';
-import vscodeLogo from './assets/tech_logo/vscode.png';
-import netlifyLogo from './assets/tech_logo/netlify.png';
-import vercelLogo from './assets/tech_logo/vercel.png';
+import threee from './assets/tech_logo/three.png';
+import ReduxlLogo from './assets/tech_logo/redux.png';
 import framermotionLogo from './assets/tech_logo/framer.png';
-import renderLogo from './assets/tech_logo/render.png';
+import nextfb from './assets/tech_logo/next.jpg';
 
 
 // Education Section Logo's
-import cbse from './assets/education_logo/cbse.png'
-import vbspu from './assets/education_logo/vbspu.png'
+import vbspu from './assets/education_logo/ghalib.jpg'
+import bbdu from './assets/education_logo/schhool.jpg'
 // Project Section Logo's
-import carrental from './assets/work_logo/carRental.webp'
-import powerflex from './assets/work_logo/powerflex.webp'
+import carrental from './assets/work_logo/carRental.png'
 import shopfinity from './assets/work_logo/shopfinity.webp';
-import grocify from './assets/work_logo/grocify.webp';
-import evion from './assets/work_logo/evion.webp';
+import grocify from './assets/work_logo/grocify.png';
+import evion from './assets/work_logo/evion.png';
 
-// certificates&extraCurriculuarActivities images 
-import mad from './assets/certificate_activity_img/mad.jpeg'
-import mern from './assets/certificate_activity_img/mern1.jpeg'
-import olevel from './assets/certificate_activity_img/olevel.jpg'
-import poster from './assets/certificate_activity_img/poster.jpeg'
-import publication from './assets/certificate_activity_img/publication.jpeg'
-import umaga from './assets/certificate_activity_img/umaga.jpeg'
-import poster1 from './assets/certificate_activity_img/myposter1.jpeg'
-import poster2 from './assets/certificate_activity_img/myposter2.jpeg'
-import balaji from './assets/certificate_activity_img/balaji.png'
-import bbdu from './assets/certificate_activity_img/bbdu.png'
-import journal from './assets/certificate_activity_img/journal.png'
-import olevellogo from './assets/certificate_activity_img/nielit.jpg'
 
 export const SkillsInfo = [
    { 
@@ -60,8 +44,8 @@ export const SkillsInfo = [
   },
   { 
     id: 4, 
-    name: 'React JS', 
-    logo: reactjsLogo 
+    name: 'TypeScrip', 
+    logo: typelogo 
   },
   { 
     id: 5, 
@@ -70,58 +54,53 @@ export const SkillsInfo = [
   },
   { 
     id: 6, 
+    name: 'React JS', 
+    logo: reactjsLogo 
+  },
+  { 
+    id: 7, 
+    name: 'Next.JS', 
+    logo: nextfb 
+  },
+  { 
+    id: 8, 
     name: 'GSAP', 
     logo: gsapLogo 
   },
   { 
-    id: 7, 
+    id: 9, 
+    name: 'Three.JS', 
+    logo: threee 
+  },
+  { 
+    id: 10, 
     name: 'Framer Motion', 
     logo: framermotionLogo
   },
   { 
-    id: 8, 
-    name: 'Node JS', 
-    logo: nodejsLogo 
-  },
-  { 
-    id: 9, 
-    name: 'Express JS', 
-    logo: expressjsLogo 
-  },
-  { 
-    id: 10, 
-    name: 'MongoDB', 
-    logo: mongodbLogo 
-  },
-  { 
     id: 11, 
+    name: 'Ant Design', 
+    logo: Antdes 
+  },
+  { 
+    id: 12, 
+    name: 'Material UI', 
+    logo: Material 
+  },
+  { 
+    id: 13, 
     name: 'Git', 
     logo: gitLogo 
   },
   { 
-    id: 12, 
+    id: 14, 
     name: 'GitHub', 
     logo: githubLogo 
   },
   { 
-    id: 13, 
-    name: 'VS Code', 
-    logo: vscodeLogo 
-  },
-  { 
-    id: 14, 
-    name: 'Vercel', 
-    logo: vercelLogo 
-  },
-  { 
     id: 15, 
-    name: 'Netlify', 
-    logo: netlifyLogo 
-  },
-  { 
-    id: 16, 
-    name: 'Render', 
-    logo: renderLogo 
+    name: 'Redux', 
+    logo: ReduxlLogo 
   },
 ];
 
@@ -130,34 +109,18 @@ export const SkillsInfo = [
     {
       id: 0,
       img: bbdu,
-      school: "Babu Banarasi Das University, Lucknow",
-      date: "2023 - 2025",
-      grade: "78.67%",
-      degree: "Master of Computer Applications (MCA)",
+      school: "Omar Farooq High School,",
+      date: "2012 - 2024",
+      grade: "88.67%",
+      degree: "Education and training period",
     },
     {
       id: 1,
       img: vbspu,
-      school: "Veer Bahadur Singh Purvanchal University, Jaunpur",
-      date: "2020 - 2023",
-      grade: "56.20%",
-      degree: "Bachelor of Commerce (B.Com)",
-    },
-    {
-      id: 2,
-      img: cbse,
-      school: "Toolika Public School, Ghazipur",
-      date: "2019 - 2020",
-      grade: "70.80%",
-      degree: "CBSE(XII) - PCM",
-    },
-    {
-      id: 3,
-      img: cbse,
-      school: "BSY Shikshan Sansthan, Tulasipur, Ghazipur",
-      date: "2016 - 2017",
-      grade: "8.2 CGPA",
-      degree: "CBSE(X)",
+      school: "Ghalib University,",
+      date: "2040 - 2025",
+      grade: "86.20%",
+      degree: "Bachelor's degree in Computer Science",
     },
   ];
   
@@ -165,21 +128,17 @@ export const SkillsInfo = [
     
     {
       id: 1,
-      title: "CarRental",
+      title: "MacOs Operating system ",
       description:
-        "A full-stack car rental platform built with the MERN stack, featuring role-based authentication for owners and users, a complete owner dashboard to manage car listings, and optimized image uploads via ImageKit. Users can search and filter cars by brand, model, category, and transmission, check availability through server-side validation, and complete bookings with a clear and responsive UI. The frontend uses React, Tailwind CSS, and Framer Motion for smooth interactions, while the backend delivers secure JWT authentication, REST APIs, and real-time data handling with MongoDB.",
+        "A macOS-inspired operating system interface crafted with a strong focus on visual polish and smooth user experience, where application windows move and transition fluidly using GSAP animations. The system delivers elegant window management, responsive interactions, and seamless motion effects that closely resemble a real desktop environment. With refined UI details and high-performance animations, every interaction feels natural and premium, creating an impressive and immersive operating system experience directly in the browser.",
       image: carrental,
       tags: [
-        "React.js",
+        "ًًReact.JS",
         "Tailwind CSS",
-        "Framer Motion",
-        "Node.js",
-        "Express",
-        "MongoDB",
-        "ImageKit"
+        "Gsap",
       ],
-      github: "https://github.com/MohammadZakariya786/Car-Rental",
-      webapp: "https://car-rental-omega-ruby.vercel.app/"
+      github: "https://github.com/webcoding44",
+      webapp: "https://comforting-sfogliatella-ed15ca.netlify.app/"
     }
     ,
     {
@@ -189,99 +148,29 @@ export const SkillsInfo = [
         "An interactive e-commerce web app built with React, Tailwind CSS, and Framer Motion. It features a product catalog powered by the Fake Store API with category filters and search, a wishlist that saves items using local storage, a shopping cart with quantity management, and an order system with a clear summary and confirmation modal. The platform also updates product listings instantly as users search or select categories, with smooth animations, smart notifications and a responsive UI for an easy shopping experience across devices.",
       image: shopfinity,
       tags: ["React.js", "Tailwind CSS", "Framer Motion", "REST API"],
-      github: "https://github.com/MohammadZakariya786/Shopfinity",
-      webapp: "https://shopfinity-six.vercel.app/",
+      github: "https://github.com/webcoding44",
+      webapp: "https://onlin-shop.vercel.app/",
     },
     {
       id: 3,
-      title: "Grocify",
+      title: "Dashboard",
       description:
-        "A modern, responsive online grocery website, built with React, Tailwind CSS, and GSAP for smooth animations and seamless user experience. Grocify provides category-based browsing, detailed product listings, smooth GSAP-powered transitions, and a fully responsive UI. The highlight feature is its AI-powered chatbot, built with React and Tailwind CSS, and optimized with predefined Q&A, knowledge base integration, Gemini AI API with key rotation, and domain restrictions for accurate and cost-effective responses.Deployment is handled on Vercel serverless functions, with secure environment variable management for API keys.",
+        "A modern admin dashboard designed to provide clear insights and efficient data management through a clean and intuitive interface. The dashboard presents real-time analytics, interactive charts, and dynamic tables to help users monitor key metrics and system performance. Built with a responsive UI, it supports smooth navigation, advanced filtering, and role-based access to ensure secure and organized data control. Optimized frontend interactions and well-structured APIs work together to deliver fast updates, scalability, and a seamless user experience across devices.",
       image: grocify,
-      tags: ["React.js", "Tailwind CSS", "GSAP", "Gemini API", "AI Chatbot"],
-      github: "https://github.com/MohammadZakariya786/Grocify",
-      webapp: "https://grocify-alpha-three.vercel.app/",
+      tags: ["React.js", "Tailwind CSS", "Chart.JS", "AI Chatbot"],
+      github: "https://github.com/webcoding44",
+      webapp: "https://dashboard-react-psi.vercel.app/",
     },
 
   {
   id: 4,
-  title: "EVion",
-  description: "EVion is a modern, responsive landing page for EV charging solutions, built with React, Tailwind CSS, and GSAP for smooth animations. It features a responsive hero section, animated components, and a modern UI.",
+  title: "3D Portfolio",
+  description: "This 3D project represents one of my standout experiences in design and modeling. I aimed to bring every detail to life with precision and creativity, creating a sense of realism that engages the viewer. The result is a blend of art, technique, and innovation, and I’m proud to showcase it as a highlight in my portfolio",
   image: evion, 
-  tags: ["React.js", "Tailwind CSS", "GSAP"],
-  github: "https://github.com/MohammadZakariya786/EVion",
-  webapp: "https://evion-two.vercel.app/"
+  tags: ["React.js", "Tailwind CSS", "Three.JS" , "Gsap"],
+  github: "https://github.com/webcoding44",
+  webapp: "https://3dwebapplication.netlify.app/"
 },
-  {
-    id: 5,
-    title: "PowerFlex",
-    description:
-      "MERN Stack Final Year Project | Feb 2025 – May 2025 : Developed a web application to streamline gym trainer hiring using the MERN stack. Implemented secure role-based authentication with JWT and Bcrypt.js. Enabled trainers to create profiles, upload certifications, and apply for jobs. Assisted in designing company dashboards for job posting, candidate review, and notifications. Collaborated with the existing backend structure to integrate role-based functionality for trainers and companies.",
-    image: powerflex,
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/MohammadZakariya786/PowerFlex",
-    webapp: "https://powerflex.onrender.com/",
-  },
 ];  
 
-
-  export const certificates =[
-  {
-    id: 1,
-    title: "MERN Stack",
-    issuer: "Shri Balaji Infotech",
-    date: "Feb 2025 - May 2025",
-    description: "Completed a 3-month MERN stack training covering MongoDB, ExpressJS, ReactJS, NodeJS, Tailwind Css, HTML, CSS, JavaScript.",
-    certificateImage: mern,
-    logo: balaji,
-  },
-  {
-    id: 2,
-    title: "Cyberbullying Detection: A Machine Learning Approach using Social Media Data",
-    issuer: "IJSREM Journal",
-    date: "January 2025",
-    description: "Published a research paper presenting a machine learning-based model for detecting cyberbullying on social media. The study applied text classification techniques, feature extraction using TF-IDF, and evaluated multiple algorithms including SVM, Decision Trees, Random Forests, and Naive Bayes, achieving a highest accuracy of 83%.",
-    certificateImage: publication,
-    logo: journal,
-  },
-  {
-    id: 3,
-    title: "Mobile Application Development",
-    issuer: "Babu Banarasi Das University, School of Computer Applications",
-    date: "July 2024",
-    description: "Completed a Value Added Course on 'Mobile Application Development' offered by the School of Computer Applications at Babu Banarasi Das University.",
-    certificateImage: mad,
-    logo: bbdu,
-  },
-  {
-    id: 4,
-    title: "O Level (1 year)",
-    issuer: "National Institute of Electronics and Information Technology (NIELIT)",
-    date: "December 2023",
-    description: "Successfully completed all theory and practical modules of the DOEACC 'O' Level Examination, with an overall grade of 'B' and an overall percentage of 70.30%. The subjects covered included Information Technology Tools and Network Basics, Web Designing & Publishing, Programming and Problem Solving through Python, and Internet of Things and its Application.",
-    certificateImage: olevel,
-    logo: olevellogo,
-  },
-]
-
-export const extraCurricularActivities = [
-  {
-    id: 1,
-    title: "Poster Making Competition",
-    date: "6 August 2024",
-    description: "Participated in the 'Poster Making Competition' at the EC Building, SOCA, BBD University, Lucknow, and designed a poster on Gender Equality that was featured on the college notice board.",
-    certificateImage: poster2,
-  },
-  {
-    id:2,
-    certificateImage:poster1
-  },
-  {
-    id: 3,
-    title: "Workshop on Cyber Security and Ethical Hacking",
-    date: "Oct 14, 2023",
-    description: "Participated in a workshop on Cyber Security and Ethical Hacking conducted by Umaga Technologies Pvt. Ltd., and organized by Team Lakshya, the official Event Management Team of SOCA.",
-    certificateImage: umaga,
-  },
-];
 

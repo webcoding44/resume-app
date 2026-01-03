@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import {FiMenu,FiX} from 'react-icons/fi'
 import {FaGithub,FaLinkedin, FaMusic, FaVolumeMute, FaVolumeOff, FaVolumeUp, FaWhatsapp} from 'react-icons/fa'
 import audioFile from '../../assets/song.mp3'
+import { SiFiverr } from 'react-icons/si'
 const Navbar = () => {
 
   const containerRef=useRef()
@@ -109,9 +110,9 @@ const Navbar = () => {
             {/* logo  */}
             <div className='cursor-pointer text-lg font-semibold'>
                 <span className='text-[#8245ec]'>&lt;</span>
-                <span className='text-white'>Mohammad</span>
+                <span className='text-white'>Safiurahman</span>
                 <span className='text-[#8245ec]'>/</span>
-                <span className='text-white'>Zakariya</span>
+                <span className='text-white'>Jami</span>
                 <span className='text-[#8245ec]'>&gt;</span>
             </div>
             {/* dektop menu  */}
@@ -126,7 +127,7 @@ const Navbar = () => {
             {/* social media icons  */}
             <div className='hidden md:flex space-x-4 text-inherit '>
                 <a 
-                href="https://github.com/MohammadZakariya786"
+                href="https://github.com/webcoding44"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackSocialClick("github")}
@@ -135,7 +136,7 @@ const Navbar = () => {
                 <FaGithub size={24}/>
                 </a>
                 <a 
-                href="https://www.linkedin.com/in/mohammadzakariya-dev/"
+                href="https://www.linkedin.com/in/safiurahman-jami-/"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackSocialClick("linkedin")}
@@ -143,14 +144,14 @@ const Navbar = () => {
                 >
                 <FaLinkedin size={24}/>
                 </a>
-                <a 
-                href="https://wa.me/918299034183?text=Hello%20Mohammad%20Zakariya!"
+                  <a 
+                href="https://www.fiverr.com/sellers/safiurahmanjami/edit"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackSocialClick("whatsapp")}
+                onClick={() => trackSocialClick("fiverr")}
                 className='text-gray-300 hover:text-[#8245ec]'
                 >
-                <FaWhatsapp size={24}/>
+                <SiFiverr size={24}/>
                 </a>
             </div>  
             {/* mobile menu icons  */}
@@ -184,7 +185,7 @@ const Navbar = () => {
                             ))}
                         <div className='flex space-x-4'>
                           <a
-                            href="https://github.com/MohammadZakariya786"
+                            href="https://github.com/webcoding44"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackSocialClick("github")}
@@ -193,7 +194,7 @@ const Navbar = () => {
                             <FaGithub size={24} />
                           </a>
                           <a
-                            href="https://www.linkedin.com/in/mohammad-zakariya-6856bb296/"
+                            href="https://www.linkedin.com/in/safiurahman-jami-/"
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackSocialClick("linkedin")}
@@ -202,13 +203,13 @@ const Navbar = () => {
                             <FaLinkedin size={24} />
                           </a>
                           <a
-                            href="https://wa.me/918299034183?text=Hello%20Mohammad%20Zakariya!"
+                            href="https://www.fiverr.com/sellers/safiurahmanjami/edit"
                             target="_blank"
                             rel="noopener noreferrer"
-                            onClick={() => trackSocialClick("whatsapp")}
+                            onClick={() => trackSocialClick("fiverr")}
                             className='text-gray-300 hover:text-[#8245ec]'
                           >
-                            <FaWhatsapp size={24} />
+                            <SiFiverr size={24} />
                           </a>
                         </div>
                     </ul>

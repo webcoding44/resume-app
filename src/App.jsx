@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react'
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import gsap from "gsap"
 import Navbar from './components/Navbar/Navbar'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Education from './components/Education/Education'
+import Serveses from './components/Serveses/Serveses'
 import Work from './components/Work/Work'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-import Experiences from './components/Experiences/Experiences'
 import Particles from './components/Galaxy/Particles'
-import Activities from './components/ExtraCurricularActivities/Activities'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -38,8 +37,7 @@ const App = () => {
         <Skills/>
         <Work/>
         <Education/>
-        <Experiences/>
-        <Activities/>
+        <Serveses/>
         <Contact/>
         <Footer/>
       </div>
