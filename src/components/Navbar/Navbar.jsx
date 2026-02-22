@@ -72,7 +72,7 @@ const Navbar = () => {
         {id: 'work', label: 'Projects'},
         // {id: 'experiences', label: 'Certificates'},
         {id: 'education', label: 'Education'},
-        {id: 'contact', label: 'Contact'},
+        {id: 'contact', label: 'Contact'}
     ];
 
 
@@ -101,7 +101,7 @@ const Navbar = () => {
                       {/* Toggle button */}
                       <button
                         onClick={toggleAudio}
-                        className=' md:text-lg text-xs  z-50 bg-purple-500 text-white p-2 rounded-full shadow-lg'
+                        className=' md:text-lg text-xs  z-50 bg-[#4aeb00] text-white p-2 rounded-full shadow-lg'
                       >
                         {isPlaying ? <FaVolumeUp/>:<FaVolumeMute/>}
                       </button>
@@ -109,16 +109,16 @@ const Navbar = () => {
             
             {/* logo  */}
             <div className='cursor-pointer text-lg font-semibold'>
-                <span className='text-[#8245ec]'>&lt;</span>
-                <span className='text-white'>Safiurahman</span>
-                <span className='text-[#8245ec]'>/</span>
-                <span className='text-white'>Jami</span>
-                <span className='text-[#8245ec]'>&gt;</span>
+                <span className='text-[#4aeb00]'>&lt;</span>
+                <span className='text-white eb-lora'>Safiurahman</span>
+                <span className='text-[#4aeb00]'>/</span>
+                <span className='text-white eb-lora'>Jami</span>
+                <span className='text-[#4aeb00]'>&gt;</span>
             </div>
             {/* dektop menu  */}
             <ul className='hidden lg:flex text-gray-300 space-x-3 lg:space-x-6'>
                 {menuItems.map((item) =>(
-                    <li key={item.id} className={`nav-btn cursor-pointer hover:text-[#8245ec] ${activeSection===item.id ? 'text-[#8245ec]' : ''}`}>
+                    <li key={item.id} className={`nav-btn cursor-pointer hover:text-[#8245ec] ${activeSection===item.id ? 'text-[#8245ec]' : ''} eb-lora`}>
                         <button onClick={()=>handleMenuItem(item.id)}>{item.label}</button>
                     </li>
                 ))}
@@ -131,7 +131,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackSocialClick("github")}
-                className='text-gray-300 hover:text-[#8245ec]'
+                className='text-gray-300 hover:text-[#4aeb00]'
                 >
                 <FaGithub size={24}/>
                 </a>
@@ -140,7 +140,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackSocialClick("linkedin")}
-                className='text-gray-300 hover:text-[#8245ec]'
+                className='text-gray-300 hover:text-[#4aeb00]'
                 >
                 <FaLinkedin size={24}/>
                 </a>
@@ -149,7 +149,7 @@ const Navbar = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackSocialClick("fiverr")}
-                className='text-gray-300 hover:text-[#8245ec]'
+                className='text-gray-300 hover:text-[#4aeb00]'
                 >
                 <SiFiverr size={24}/>
                 </a>
@@ -158,10 +158,10 @@ const Navbar = () => {
             <div className='lg:hidden '>
                 {
                     isOpen?(
-                        <FiX className='text-3xl text-[#8245ec] cursor-pointer'
+                        <FiX className='text-3xl text-[#4aeb00] cursor-pointer'
                         onClick={()=>setIsOpen(false)}/>
                     ):(
-                        <FiMenu className='text-3xl text-[#8245ec] cursor-pointer'
+                        <FiMenu className='text-3xl text-[#4aeb00] cursor-pointer'
                         onClick={()=>setIsOpen(true)}/>
                     )
                 }
@@ -177,7 +177,7 @@ const Navbar = () => {
                     <ul className='flex flex-col items-center space-y-4 py-4 text-gray-300'>
                         {
                             menuItems.map((item)=>(
-                                <li key={item.id} className={`hover:text-white cursor-pointer ${activeSection===item.id?'text-[#8245ec]':''}`}>
+                                <li key={item.id} className={`hover:text-white cursor-pointer ${activeSection===item.id?'text-[#4aeb00]':''} eb-lora`}>
                                 <button onClick={()=>handleMenuItem(item.id)}>
                                     {item.label}
                                 </button>
@@ -189,7 +189,7 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackSocialClick("github")}
-                            className='text-gray-300 hover:text-white'
+                            className='text-gray-300 hover:text-[#4aeb00]'
                           >
                             <FaGithub size={24} />
                           </a>
@@ -198,7 +198,7 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackSocialClick("linkedin")}
-                            className='text-gray-300 hover:text-white'
+                            className='text-gray-300 hover:text-[#4aeb00]'
                           >
                             <FaLinkedin size={24} />
                           </a>
@@ -207,7 +207,7 @@ const Navbar = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={() => trackSocialClick("fiverr")}
-                            className='text-gray-300 hover:text-[#8245ec]'
+                            className='text-gray-300 hover:text-[#4aeb00]'
                           >
                             <SiFiverr size={24} />
                           </a>

@@ -55,21 +55,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+    <section id="contact" className="py-24 px-[12vw] md:px-[7vw] lg:px-[20vw] -my-18 ">
       <ToastContainer />
 
       {/* section title  */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">CONTACT</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 md:text-lg text-md font-semibold">
+        <h2 className="text-4xl font-bold text-white nf-r2">CONTACT</h2>
+        <div className="w-32 h-1 bg-[#4aeb00] mx-auto mt-4"></div>
+        <p className="text-gray-400 mt-4 md:text-lg text-md font-semibold eb-lora">
           I'd love to hear from you-reach out for any opportunities or
           questions!
         </p>
       </div>
 
       {/* container: info cards + contact form (stack on mobile, row on md+) */}
-      <div className="w-full flex flex-col md:flex-row items-start justify-center gap-8">
+      <div className="w-[80vw] -mx-22 flex flex-col md:flex-row items-start justify-center gap-8 ">
         {/* info cards */}
         <div className="bg-[#0d081f] md:w-1/2 w-full p-6 rounded-lg shadow-lg border border-gray-700">
           <div className="w-full h-32 my-4 border border-gray-600 rounded-md p-8 bg-[#131025] relative">
@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
 
         {/* contact form  */}
-        <div className="w-full md:w-1/2 max-w-md bg-[#0d081f] p-6 rounded-lg shadow-lg border border-gray-700">
+        <div className="w-full md:w-1/2 max-w-md bg-[#0d081f] p-9 rounded-lg shadow-lg border border-gray-700">
           <h3 className="text-xl font-semibold text-white text-center">
             Connect With Me
           </h3>

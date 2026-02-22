@@ -6,6 +6,7 @@ import profile from '../../assets/gemini-2.5-flash-image-preview__nano-banana__Ø
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import _ScrollTrigger, { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Button from '../buttom';
 gsap.registerPlugin(_ScrollTrigger)
 const About = () => {
 
@@ -70,14 +71,14 @@ const About = () => {
     }
   }, []);
 
-  const trackResumeDownload = () => {
-  if (window.gtag) {
-    window.gtag("event", "resume_download", {
-      event_category: "engagement",
-      event_label: "Download Resume Button"
-    });
-  }
-};
+//   const trackResumeDownload = () => {
+//   if (window.gtag) {
+//     window.gtag("event", "resume_download", {
+//       event_category: "engagement",
+//       event_label: "Download Resume Button"
+//     });
+//   }
+// };
 
 
 
@@ -93,11 +94,11 @@ const About = () => {
             {/* left side  */}
             <div className='text-1 md:w-1/2 text-center md:text-left mt-8 md:mt-0'>
             {/* greeting  */}
-            <h1 className='text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-2 leading-tight'>
+            <h1 className='nf-r2 text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-2 leading-tight'>
                Hi, I am 
             </h1>
             {/* name   */}
-            <h2 className='text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-4 leading-tight'>
+            <h2 className='nf-r2 text-2xl sm:text-5xl md:text-3xl font-bold text-white mb-4 leading-tight'>
                Safiurahman
             </h2>
             {/* skills heading with typo effect  */}
@@ -119,28 +120,16 @@ const About = () => {
                           wrapper="span"
                           cursor={true}
                           repeat={Infinity}
-                          style={{ color: '#8245ec' }}
+                          style={{ color: '#4aeb00'}}
                       />
                   </h3>
                   {/* about me paragraph  */}
-                  <p className='overflow-hidden text-2 gpu-boost text-sm sm:text-md md:text-md text-gray-400 mt-8 leading-relaxed'>
-         Iâ€™m a Front-End Developer, and I have expertise in HTML, CSS, JavaScript, TypeScript, Next.JS , React.JS, Redux, Tailwind CSS, and GSAP.JS. I build modern, responsive, and user-friendly web applications with clean code and smooth animations. My focus is on performance, detail, and quality, ensuring every project meets client expectations.
+                  <p className='overflow-hidden text-2 gpu-boost text-sm sm:text-md md:text-md text-gray-400 mt-8 leading-relaxed eb-lora'>
+I am a Full-Stack Developer with a strong focus on Front-End development. I build modern, responsive web applications using React.js and Next.js, with clean, maintainable code.  I also create smooth, high-quality animations and interactive experiences using GSAP and Three.js. On the back end, I work with Supabase and Prisma to handle databases, APIs, and authentication.  My priority is performance, detail, and delivering polished, high-quality results.
                   </p>
                   {/* resume button*/}
-                  <a 
-                  href='https://drive.google.com/drive/my-drive'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  onClick={trackResumeDownload}
-                  className='text-3  z-90 inline-block mt-5 px-8 py-3 text-white font-bold text-md rounded-full shadow-md transform hover:scale-105 active:scale-105 transition duration-300'
-                  style={{
-                  background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-                  boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-                 }}
-                 >
-                 Download Resume
-                  </a>
-              </div>
+                  <a href="https://drive.google.com/drive/my-drive" target='_blank' rel='noopener noreferrer'><Button  /></a>
+              </div> 
             {/* right side  */}
             <div className='md:w-1/2 flex justify-center mt-8 md:mt-0'>
             <div className='imgCard relative z-1'>

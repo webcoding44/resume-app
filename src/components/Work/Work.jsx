@@ -5,6 +5,9 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { MotionPathPlugin } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger,MotionPathPlugin)
+
+
+
 const Work = () => {
 
   
@@ -102,19 +105,21 @@ useGSAP(() => {
             trackProjectClick(project.title);
             handleOpenModal(project);
           }}
-          className=' transition-transform duration-300'
+          className='transition-transform duration-300 '
           > 
+
           <div className='p-4'>
             <img src={project.image} alt={project.title} className='w-full h-full object-contain rounded-xl'/>
           </div>
+
           <div className='p-6'>
-            <h3 className='text-2xl font-bold text-white mb-2'>{project.title}</h3>
-            <p className='text-gray-400 mb-4 pt-5 line-clamp-3'>{project.description}</p>
+            <h3 className='text-2xl font-bold nf-r2 text-white mb-2'>{project.title}</h3>
+            <p className='text-gray-400 mb-4 pt-5 eb-lora line-clamp-3'>{project.description}</p>
             <div className='mb-4'>
               {project.tags.map((tag,index)=>(
                 <span
                 key={index}
-                className='inline-block skill-tab bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2'>
+                className='inline-block skill-tab bg-[#251f38] text-xs font-semibold text-[#4aeb00] rounded-full px-2 py-1 mr-2 mb-2'>
                 {tag}
                 </span>
               ))}
@@ -133,38 +138,38 @@ useGSAP(() => {
     >
       {/* section title  */}
       <div className='text-center mb-16'>
-        <h2 className='text-4xl font-bold text-white'>PROJECTS</h2>
-        <div className='w-32 h-1 bg-purple-500 mt-4 mx-auto'></div>
-        <p className='text-md text-gray-400 mt-4 font-semibold'>A showcase of the projects I have worked on, highlighting my skills and experience in various technologies.</p>
-        <p className='text-white mt-5 font-medium text-[0.8em] animate-pulse'>(Click to view the details of each project)</p>
+        <h2 className='text-4xl font-bold nf-r2 text-white'>PROJECTS</h2>
+        <div className='w-32 h-1 bg-[#4aeb00]  mt-4 mx-auto'></div>
+        <p className='text-md text-gray-400 mt-4 font-semibold eb-lora'>A showcase of the projects I have worked on, highlighting my skills and experience in various technologies.</p>
+        <p className='text-white mt-5 font-medium text-[0.8em] eb-lora animate-pulse'>(Click to view the details of each project)</p>
       </div>
       {/* proect grid  */}
-      <div className='grid gap-12 grid-cols-1 md:grid-cols-2'>
+      <div className='grid gap-8 grid-cols-1 md:grid-cols-2'>
       {
         renderCards
       }
       </div>
       {/* model container  */}
       {selectedProject && (
-        <div  className='fixed inset-0 z-100  flex items-center justify-center bg-purple-900 overflow-auto  p-2 md:p-4'>
+        <div  className='fixed inset-0 z-100  flex items-center justify-center bg-[#000000] overflow-auto  p-2 md:p-4'>
           <div  className='custom-scrollbar bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl relative max-h-[90vh] overflow-y-auto'>
             <div className='flex justify-end p-4 sticky top-0 bg-gray-900 z-50'>
-              <button onClick={handleCloseModal} className='text-white text-3xl font-bold hover:text-purple-500'>
+              <button onClick={handleCloseModal} className='text-white text-3xl font-bold hover:text-[#4aeb00]'>
               &times;
               </button>
             </div>
             <div className='flex flex-col'>
               <div className='flex justify-center bg-gray-900 px-4'>
-                <img src={selectedProject.image} alt={selectedProject.title} className=' object-contain rounded-xl xl:max-h-[50vh] md:max-h-[40vh] lg:max-h-[55vh]  shadow-2xl'/>
+                <img src={selectedProject.image} alt={selectedProject.title} className=' object-contain rounded-xl xl:max-h-[50vh] md:max-h-[40vh] lg:max-h-[55vh] shadow-2xl'/>
               </div>
               <div className='lg:p-8 p-6'>
-                <h3 className='lg:text-3xl font-bold text-white mb-4 text-md '>{selectedProject.title}</h3>
-                <p className='lg:text-sm xl:text-base  text-gray-400 mb-6 text-xs '>{selectedProject.description}</p>
+                <h3 className='lg:text-3xl font-bold text-white mb-4 text-md nf-r2 '>{selectedProject.title}</h3>
+                <p className='lg:text-sm xl:text-base  text-gray-400 mb-6 text-xs eb-lora  '>{selectedProject.description}</p>
                 <div className='flex flex-wrap gap-2 mb-6'>
                   {selectedProject.tags.map((tag,index)=>(
                     <span
                     key={index}
-                    className=' bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1'>
+                    className=' bg-[#251f38] text-xs font-semibold text-[#4aeb00] rounded-full px-2 py-1'>
                     {tag}
                     </span>
                   ))}
@@ -172,12 +177,12 @@ useGSAP(() => {
                 <div className='flex gap-4'>
                   <a href={selectedProject.github} target='_blank' rel='noopener noreferrer'
                   onClick={() => trackGithubClick(selectedProject.title)}
-                  className='w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center'>
+                  className='w-1/2 bg-gray-800 nf-r2 hover:bg-[#4aeb00] text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center'>
                   View Code
                   </a>
                   <a href={selectedProject.webapp} target='_blank' rel='noopener noreferrer'
                   onClick={() => trackLiveClick(selectedProject.title)}
-                  className='w-1/2 bg-purple-600 hover:bg-purple-800 text-gray-200 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center'>
+                  className='w-1/2 bg-[#4aeb00] hover:[#4aeb00] nf-r2 text-gray-200 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center'>
                   View Live
                   </a>
                 </div>
