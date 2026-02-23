@@ -32,6 +32,7 @@ import bbdu from './assets/education_logo/schhool.jpg'
 import carrental from './assets/work_logo/carRental.png'
 import evion from './assets/work_logo/evion.png';
 import xz from './assets/work_logo/xz.png'
+import sasa from './assets/work_logo/sdv.png'
 
 
 export const SkillsInfo = [
@@ -200,8 +201,8 @@ export const SkillsInfo = [
       id: 2,
       title: "LMS SaaS Platform",
       description:
-        "",
-      image: "",
+        "This platform includes secure user authentication, subscription management, and integrated payment processing. It functions as a real-time teaching system powered by Vapi, enabling live, interactive learning experiences. The application integrates an AI vocal agent to deliver dynamic voice-based instruction, supports seamless session management, and provides an engaging, fully interactive learning environment for users. 🔋 Features 👉 AI Voice Agents: Take tutoring sessions with voiced AIs specializing in the topics you want to get better at. 👉 Authentication: Secure user sign-up and sign-in with Clerk; Google authentication and many more. 👉 Billing & Subscriptions: Easily manage plans, upgrades, and payment details. 👉 Bookmarks and Session History: Let users organise their learning by bookmarking tutors and accessing previous sessions. 👉 Code Reusability: Leverage reusable components and a modular codebase for efficient development. 👉 Create a Tutor: Create your own AI tutors, choosing a subject, topic, and style of conversation. ........",
+      image: sasa ,
       tags: ["Next.JS", "Tailwind CSS", "Clerk", "Sentry" , "Shadcn/ui" , "Supabase" , "Vapi"],
       github: "https://github.com/webcoding44",
       webapp: "",
