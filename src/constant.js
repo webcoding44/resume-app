@@ -205,7 +205,7 @@ export const SkillsInfo = [
       image: sasa ,
       tags: ["Next.JS", "Tailwind CSS", "Clerk", "Sentry" , "Shadcn/ui" , "Supabase" , "Vapi"],
       github: "https://github.com/webcoding44",
-      webapp: "",
+      webapp: "https://lambent-arithmetic-ac4d58.netlify.app/",
     },
     
     
